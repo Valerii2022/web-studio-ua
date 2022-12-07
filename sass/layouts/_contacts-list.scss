@@ -1,15 +1,23 @@
 .contacts-list {
-   @include flex(flex, null, baseline);
+   // @include flex(flex, null, baseline);
+   padding-top: 21px;
+   padding-bottom: 21px;
+
+   &__item:first-child {
+      margin-bottom: 10px;
+   }
 
    &__item:not(:first-child) {
-      margin-left: 50px;
+      // margin-left: 50px;
    }
    &__link {
       display: block;
-      padding: 30px 3px;
-      height: 100%;
+      // padding: 30px 3px;
+      // height: 100%;
 
-      @include font(500, null, 1.14, 0.02em);
+      @include font(500, 12px, 1.17, 0.02em);
+      // line-height: 1.14;
+      // font-size: 14px;
 
       color: var(--primary-text-color);
    }

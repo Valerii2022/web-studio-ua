@@ -1,5 +1,10 @@
 .section {
-   padding: 94px 0;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+   }
 
    &__title {
       color: var(--secondary-text-color);

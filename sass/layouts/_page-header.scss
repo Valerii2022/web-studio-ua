@@ -2,11 +2,21 @@
    border-bottom: 1px solid var(--border-line-color);
 
    &__wrapper {
-      @include flex(flex, space-between, null);
+      display: flex;
+   }
+
+   &__nav-wrap {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+         flex-grow: 1;
+         display: flex;
+         justify-content: space-between;
+      }
    }
 
    &__nav {
-      display: flex;
+      margin-right: auto;
    }
 
    &__logo {

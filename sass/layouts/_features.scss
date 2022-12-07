@@ -1,7 +1,10 @@
 .features {
    &__list {
-      // display: flex;
-      // gap: 30px;
+      @media screen and (min-width: 768px) {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 30px;
+      }
    }
 
    &__thumb {
@@ -14,7 +17,19 @@
    }
 
    &__item {
-      // width: calc((100% - 90px) / 4);
+      @media screen and (min-width: 768px) {
+         width: calc((100% - 30px) / 2);
+      }
+
+      @media screen and (min-width: 1200px) {
+         width: calc((100% - 90px) / 4);
+      }
+   }
+
+   &__item:not(:last-child) {
+      @media screen and (max-width: 767px) {
+         margin-bottom: 30px;
+      }
    }
 
    &__title {
@@ -24,6 +39,10 @@
       text-transform: uppercase;
 
       color: var(--secondary-text-color);
+
+      @media screen and (max-width: 767px) {
+         text-align: center;
+      }
    }
 
    &__subtitle {
