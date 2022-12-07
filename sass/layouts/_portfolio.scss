@@ -1,0 +1,6 @@
+.portfolio {
+   &__filter {
+      @include flex(flex, center, null);
+      margin-bottom: 50px;
+   }
+}

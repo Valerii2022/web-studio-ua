@@ -1,0 +1,32 @@
+.features {
+   &__list {
+      display: flex;
+      gap: 30px;
+   }
+
+   &__thumb {
+      height: 120px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      @include flex(flex, center, center);
+
+      background: var(--secondary-background-color);
+   }
+
+   &__item {
+      width: calc((100% - 90px) / 4);
+   }
+
+   &__title {
+      margin-bottom: 10px;
+
+      @include font(700, 14px, 1.14, null);
+      text-transform: uppercase;
+
+      color: var(--secondary-text-color);
+   }
+
+   &__subtitle {
+      line-height: 1.71;
+   }
+}

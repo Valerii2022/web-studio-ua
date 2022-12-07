@@ -1,0 +1,7 @@
+body {
+   font-family: "Roboto", sans-serif;
+   @include font(null, 14px, null, 0.03em);
+
+   color: var(--primary-text-color);
+   background-color: var(--white-color);
+}

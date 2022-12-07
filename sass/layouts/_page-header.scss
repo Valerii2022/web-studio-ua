@@ -1,0 +1,18 @@
+.page-header {
+   border-bottom: 1px solid var(--border-line-color);
+
+   &__wrapper {
+      @include flex(flex, space-between, null);
+   }
+
+   &__nav {
+      display: flex;
+   }
+
+   &__logo {
+      margin-right: 93px;
+
+      color: var(--logo-text-color);
+      align-self: center;
+   }
+}

@@ -1,0 +1,26 @@
+.contacts-list {
+   @include flex(flex, null, baseline);
+
+   &__item:not(:first-child) {
+      margin-left: 50px;
+   }
+   &__link {
+      display: block;
+      padding: 30px 3px;
+      height: 100%;
+
+      @include font(500, null, 1.14, 0.02em);
+
+      color: var(--primary-text-color);
+   }
+
+   &__link:hover,
+   &__link:focus {
+      color: var(--accent-text-color);
+   }
+
+   &__icon {
+      margin-right: 10px;
+      fill: currentColor;
+   }
+}
