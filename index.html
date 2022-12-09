@@ -28,7 +28,7 @@
         <a href="./index.html" class="page-header__logo logo">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <div class="page-header__nav-wrap">
+        <div class="page-header__nav-wrap js-menu-container" id="mobile-menu">
           <nav class="page-header__nav">
             <ul class="site-nav list">
               <li class="site-nav__item">
@@ -42,15 +42,7 @@
               </li>
             </ul>
           </nav>
-          <ul class="contacts-list list">
-            <li class="contacts-list__item">
-              <a href="mailto:info@devstudio.com" class="contacts-list__link link">
-                <svg class="contacts-list__icon" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
+          <ul class="page-header__contacts-list contacts-list list">
             <li class="contacts-list__item">
               <a href="tel:+380961111111" class="contacts-list__link link">
                 <svg class="contacts-list__icon" width="10" height="16">
@@ -59,8 +51,44 @@
                 +38 096 111 11 11
               </a>
             </li>
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__link link">
+                <svg class="contacts-list__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
           </ul>
+          <ul class="social-mobile">
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Instagram</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Twitter</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Facebook</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+          <button class="page-header__close-menu js-close-menu">
+            <svg width="24" height="16">
+              <use class="page-header__menu-icon" href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
         </div>
+        <button
+          class="page-header__open-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="16">
+            <use class="page-header__menu-icon" href="./images/icons.svg#icon-burger_mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--main-->
@@ -517,5 +545,7 @@
     </div>
     <!-- modal script -->
     <script src="./js/modal.js"></script>
+    <!-- mobile menu script -->
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

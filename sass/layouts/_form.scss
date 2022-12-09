@@ -93,7 +93,7 @@
       @include flex(flex, null, center);
       gap: 7px;
       margin-bottom: 30px;
-      padding-left: 12px;
+      // padding-left: 12px;
 
       color: var(--white-color);
    }
@@ -120,16 +120,27 @@
    }
 
    &__checkbox-text {
-      @include font(null, null, 1.71, 0.03em);
+      font-size: 12px;
+      line-height: 1.17;
 
       color: var(--primary-text-color);
+
+      @media screen and (min-width: 1200px) {
+         @include font(null, 14px, 1.71, 0.03em);
+      }
    }
 
    &__checkbox-link {
-      @include font(null, null, 1.71, 0.03em);
+      font-size: 12px;
+      line-height: 1.17;
+
       text-decoration-line: underline;
 
       color: var(--accent-text-color);
+
+      @media screen and (min-width: 1200px) {
+         @include font(null, 14px, 1.71, 0.03em);
+      }
    }
 
    &__checkbox:focus + &__checkbox-icon {
