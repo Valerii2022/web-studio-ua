@@ -1,9 +1,12 @@
 .footer {
    padding: 60px 0;
    background-color: var(--primary-background-color);
+   text-align: center;
 
    &__wrap {
-      @include flex(flex, start, baseline);
+      @media screen and (min-width: 1200px) {
+         @include flex(flex, start, baseline);
+      }
    }
 
    &__logo {
@@ -14,7 +17,13 @@
    }
 
    &__address-wrap {
-      margin-right: 70px;
+      @media screen and (max-width: 767px) {
+         margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         margin-right: 70px;
+      }
    }
 
    &__address {
@@ -44,8 +53,14 @@
    }
 
    &__join-in {
-      padding-top: 12px;
-      margin-right: auto;
+      @media screen and (max-width: 767px) {
+         margin-bottom: 60px;
+      }
+
+      @media screen and (min-width: 1200px) {
+         padding-top: 12px;
+         margin-right: auto;
+      }
    }
 
    &__join-in-title {
