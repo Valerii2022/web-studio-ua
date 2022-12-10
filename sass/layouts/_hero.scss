@@ -5,21 +5,30 @@
    @extend %margin-auto;
 
    background-color: var(--bg-color);
-   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero-480.jpg);
-
-   @media screen and (min-width: 768px) {
-      max-width: 768px;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../images/hero-768.jpg);
+   background-image: var(--hero-linear-gradient), url(../images/hero-480.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   @include retina {
+      background-image: var(--hero-linear-gradient), url(../images/hero-480@2x.jpg);
    }
 
-   @media screen and (min-width: 1200px) {
+   @include tablet {
+      max-width: 768px;
+      background-image: var(--hero-linear-gradient), url(../images/hero-768.jpg);
+      @include retina {
+         background-image: var(--hero-linear-gradient), url(../images/hero-768@2x.jpg);
+      }
+   }
+
+   @include desktop {
       max-width: 1600px;
       padding-top: 200px;
       padding-bottom: 200px;
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-         url(../images/hero-1200.jpg);
+      background-image: var(--hero-linear-gradient), url(../images/hero-1200.jpg);
+      @include retina {
+         background-image: var(--hero-linear-gradient), url(../images/hero-1200@2x.jpg);
+      }
    }
 
    &__title {
@@ -33,7 +42,7 @@
 
       color: var(--white-color);
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          font-size: 44px;
          line-height: 1.36;
          max-width: 696px;
@@ -48,7 +57,7 @@
       padding-left: 24px;
       padding-right: 24px;
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          padding-left: 32px;
          padding-right: 32px;
       }

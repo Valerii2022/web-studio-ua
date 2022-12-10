@@ -29,7 +29,7 @@
          background-color: var(--white-color);
       }
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          justify-content: space-between;
       }
       &.is-open {
@@ -42,7 +42,7 @@
          flex-grow: 1;
       }
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          margin-right: auto;
       }
    }
@@ -57,11 +57,11 @@
       color: var(--logo-text-color);
       align-self: center;
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          margin-right: 87px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          margin-right: 92px;
       }
    }
@@ -72,7 +72,7 @@
       padding: 10px 8px;
       background-color: transparent;
       border: none;
-      @media screen and (min-width: 768px) {
+      @include tablet {
          display: none;
       }
    }

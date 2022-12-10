@@ -1,24 +1,33 @@
 .social-mobile {
    display: flex;
-   gap: 10px;
+   gap: 5px;
    list-style: none;
 
-   @media screen and (min-width: 768px) {
+   @include tablet {
       display: none;
+      gap: 10px;
    }
 
    &__item:not(:last-child) {
-      padding-right: 10px;
+      padding-right: 5px;
       border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+      @include mobile {
+         padding-right: 5px;
+      }
    }
 
    &__link {
       font-weight: 500;
-      font-size: 18px;
+      font-size: 12px;
       line-height: 1.22;
 
       letter-spacing: 0.02em;
 
       color: var(--accent-text-color);
+
+      @include mobile {
+         font-size: 18px;
+      }
    }
 }

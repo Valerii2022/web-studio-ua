@@ -2,7 +2,7 @@
    &__title {
       margin-bottom: 30px;
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          margin-bottom: 50px;
       }
    }
@@ -18,11 +18,11 @@
       width: calc((100% - 30px) / 2);
       height: 92px;
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          width: calc((100% - 60px) / 3);
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          width: calc((100% - 150px) / 6);
       }
    }

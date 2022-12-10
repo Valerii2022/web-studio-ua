@@ -1,5 +1,5 @@
 .working {
-   @media screen and (max-width: 1199px) {
+   @include desktop {
       display: none;
    }
 
