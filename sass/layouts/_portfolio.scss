@@ -1,6 +1,19 @@
 .portfolio {
    &__filter {
-      @include flex(flex, center, null);
+      display: flex;
+      flex-wrap: wrap;
       margin-bottom: 50px;
+
+      @media screen and (max-width: 767px) {
+         margin-bottom: 40px;
+      }
+
+      @include tablet {
+         margin-bottom: 30px;
+      }
+
+      @include desktop {
+         margin-bottom: 48px;
+      }
    }
 }

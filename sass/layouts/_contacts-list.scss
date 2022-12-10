@@ -32,7 +32,6 @@
       color: var(--primary-text-color);
 
       @include tablet {
-         line-height: 1.17;
          font-size: 12px;
       }
 
@@ -45,15 +44,6 @@
       }
    }
 
-   // &__link:first-child {
-   //    @media screen and (max-width: 767px) {
-   //       font-size: 34px;
-   //       line-height: 1.18;
-
-   //       color: var(--accent-text-color);
-   //    }
-   // }
-
    &__link:hover,
    &__link:focus {
       color: var(--accent-text-color);
@@ -64,6 +54,17 @@
       fill: currentColor;
       @media screen and (max-width: 767px) {
          display: none;
+      }
+   }
+   &__accent-link {
+      @media screen and (max-width: 767px) {
+         font-size: 34px;
+         line-height: 1.18;
+
+         color: var(--accent-text-color);
+      }
+      @media screen and (max-width: 479px) {
+         font-size: 26px;
       }
    }
 }

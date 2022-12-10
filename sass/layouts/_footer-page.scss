@@ -1,11 +1,15 @@
 .footer {
    padding: 60px 0;
    background-color: var(--primary-background-color);
-   text-align: center;
+
+   @media screen and (max-width: 1199px) {
+      text-align: center;
+   }
 
    &__wrap {
-      @media screen and (min-width: 1200px) {
+      @include tablet {
          @include flex(flex, start, baseline);
+         flex-wrap: wrap;
       }
    }
 
@@ -17,6 +21,10 @@
    }
 
    &__address-wrap {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         width: 50%;
+      }
+
       @media screen and (max-width: 767px) {
          margin-bottom: 60px;
       }
@@ -57,6 +65,10 @@
          margin-bottom: 60px;
       }
 
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         width: 50%;
+      }
+
       @media screen and (min-width: 1200px) {
          padding-top: 12px;
          margin-right: auto;
@@ -70,5 +82,12 @@
       text-transform: uppercase;
 
       color: var(--white-color);
+   }
+
+   &__sign-up {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         width: 100%;
+         padding-top: 60px;
+      }
    }
 }

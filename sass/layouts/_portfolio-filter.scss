@@ -1,6 +1,19 @@
 .filter-form {
-   &__item:not(:last-child) {
-      margin-right: 8px;
+   &__list {
+      display: flex;
+
+      @media screen and (max-width: 767px) {
+         column-gap: 8px;
+         row-gap: 15px;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         max-width: 326px;
+      }
+
+      @include tablet {
+         justify-content: center;
+         gap: 8px;
+      }
    }
 
    &__label {

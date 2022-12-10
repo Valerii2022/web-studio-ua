@@ -91,6 +91,7 @@
 
    &__checkbox-label {
       @include flex(flex, null, center);
+      flex-wrap: wrap;
       gap: 7px;
       margin-bottom: 30px;
 
