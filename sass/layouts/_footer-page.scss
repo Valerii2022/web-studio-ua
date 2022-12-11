@@ -1,5 +1,6 @@
 .footer {
-   padding: 60px 0;
+   padding-top: 60px;
+   padding-bottom: 60px;
    background-color: var(--primary-background-color);
 
    @media screen and (max-width: 1199px) {
@@ -29,7 +30,7 @@
          margin-bottom: 60px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          margin-right: 70px;
       }
    }
@@ -69,7 +70,7 @@
          width: 50%;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          padding-top: 12px;
          margin-right: auto;
       }

@@ -9,7 +9,7 @@
    }
 
    &__form {
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          display: flex;
          gap: 12px;
       }
@@ -37,11 +37,11 @@
          margin-bottom: 20px;
       }
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          width: 450px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          width: 358px;
       }
    }
@@ -58,9 +58,9 @@
    }
 
    &__btn {
-      // styles
       margin-right: auto;
       margin-left: auto;
+      @extend %margin-auto;
 
       width: 200px;
       height: 50px;

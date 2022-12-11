@@ -4,8 +4,8 @@ body {
 
    color: var(--primary-text-color);
    background-color: var(--white-color);
-}
 
-body.no-scroll {
-   overflow: hidden;
+   &.no-scroll {
+      overflow: hidden;
+   }
 }

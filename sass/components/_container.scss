@@ -1,16 +1,17 @@
 .container {
-   padding: 0 15px;
+   padding-left: 15px;
+   padding-right: 15px;
    @extend %margin-auto;
 
-   @media screen and (min-width: 480px) {
+   @include mobile {
       width: 480px;
    }
 
-   @media screen and (min-width: 768px) {
+   @include tablet {
       width: 768px;
    }
 
-   @media screen and (min-width: 1200px) {
+   @include desktop {
       width: 1200px;
    }
 }

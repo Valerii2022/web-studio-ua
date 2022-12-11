@@ -1,7 +1,7 @@
 .current {
    color: var(--accent-text-color);
 
-   @media screen and (min-width: 768px) {
+   @include tablet {
       position: relative;
       &::after {
          content: "";

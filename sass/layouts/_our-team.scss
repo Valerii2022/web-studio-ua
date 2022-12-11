@@ -3,13 +3,13 @@
 
    &__title {
       margin-bottom: 30px;
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          margin-bottom: 50px;
       }
    }
 
    &__list {
-      @media screen and (min-width: 768px) {
+      @include tablet {
          display: flex;
          gap: 30px;
          flex-wrap: wrap;
@@ -22,11 +22,11 @@
       background: var(--white-color);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-      @media screen and (min-width: 768px) {
+      @include tablet {
          width: calc((100% - 30px) / 2);
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          width: calc((100% - 90px) / 4);
       }
    }
@@ -49,7 +49,7 @@
          padding-bottom: 24px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include desktop {
          padding: 30px 32px;
       }
    }
