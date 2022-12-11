@@ -1189,6 +1189,11 @@ body.no-scroll {
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media (orientation: landscape) {
+  .backdrop {
+    overflow: auto;
+  }
+}
 .backdrop__modal {
   padding: 40px;
   position: absolute;
@@ -1227,10 +1232,10 @@ body.no-scroll {
   .backdrop__modal {
     top: 0;
     left: 50%;
+    height: 100%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    max-height: 100%;
-    overflow: scroll;
+    overflow: auto;
   }
 }
 .backdrop.is-hidden {
