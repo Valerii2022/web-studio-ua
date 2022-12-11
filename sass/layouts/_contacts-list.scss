@@ -25,7 +25,7 @@
    }
 
    &__link {
-      display: block;
+      display: flex;
 
       @include font(500, 24px, 1.17, 0.02em);
 
@@ -66,5 +66,19 @@
       @media screen and (max-width: 479px) {
          font-size: 26px;
       }
+   }
+}
+
+.icon-phone {
+   @media screen and (min-width: 768px) and(max-width: 1199px) {
+      width: 10px;
+      height: 14px;
+   }
+}
+
+.icon-email {
+   @media screen and (min-width: 768px) and(max-width: 1199px) {
+      width: 14px;
+      height: 10px;
    }
 }

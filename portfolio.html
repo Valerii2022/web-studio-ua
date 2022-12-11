@@ -28,14 +28,14 @@
         <a href="./index.html" class="page-header__logo logo">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <div class="page-header__nav-wrap js-menu-container" id="mobile-menu">
+        <div class="page-header__nav-wrap" data-menu>
           <nav class="page-header__nav">
             <ul class="site-nav list">
               <li class="site-nav__item">
                 <a href="./index.html" class="site-nav__link link"> Студія </a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link current link"> Портфоліо </a>
+                <a href="./portfolio.html" class="site-nav__link link current"> Портфоліо </a>
               </li>
               <li class="site-nav__item">
                 <a href="#" class="site-nav__link link"> Контакти </a>
@@ -48,7 +48,7 @@
                 href="tel:+380961111111"
                 class="contacts-list__link contacts-list__accent-link link"
               >
-                <svg class="contacts-list__icon" width="10" height="16">
+                <svg class="contacts-list__icon icon-phone" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -56,7 +56,7 @@
             </li>
             <li class="contacts-list__item">
               <a href="mailto:info@devstudio.com" class="contacts-list__link link">
-                <svg class="contacts-list__icon" width="16" height="12">
+                <svg class="contacts-list__icon icon-email" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
@@ -77,17 +77,13 @@
               <a class="social-mobile__link link" href="#">LinkedIn</a>
             </li>
           </ul>
-          <button class="page-header__close-menu js-close-menu">
+          <button class="page-header__close-menu" data-menu-close>
             <svg width="24" height="16">
               <use class="page-header__menu-icon" href="./images/icons.svg#icon-close_mobile"></use>
             </svg>
           </button>
         </div>
-        <button
-          class="page-header__open-menu js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="page-header__open-menu" data-menu-open>
           <svg width="24" height="16">
             <use class="page-header__menu-icon" href="./images/icons.svg#icon-burger_mobile"></use>
           </svg>
@@ -171,6 +167,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-1.jpg"
                       alt="Монітор з інформаційними картками"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -205,6 +202,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-2.jpg"
                       alt="Постер баскетбольних команд New Orlean vs Golden Star"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -239,6 +237,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-3.jpg"
                       alt="Логотип ресторану Seafood"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -273,6 +272,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-4.jpg"
                       alt="Навушники Prime"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -307,6 +307,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-5.jpg"
                       alt="Проєкт Boxes"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -341,6 +342,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-6.jpg"
                       alt="Монітор із сторінкою веб-сайту"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -375,6 +377,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-7.jpg"
                       alt="Видання Limited Edition"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -409,6 +412,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-8.jpg"
                       alt="Проєкт LAB"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -443,6 +447,7 @@
                       class="portfolio-list__img"
                       src="./images/portfolio-9.jpg"
                       alt="Монітор із додатком Growing Business"
+                      width="450"
                     />
                   </picture>
                   <p class="portfolio-list__text">
@@ -528,6 +533,6 @@
       </div>
     </footer>
     <!-- mobile menu script -->
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
