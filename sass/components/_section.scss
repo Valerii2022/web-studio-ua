@@ -9,7 +9,12 @@
    &__title {
       color: var(--secondary-text-color);
 
-      @include font(null, 36px, 1.17, null);
+      @include font(null, 28px, 1.18, null);
       text-align: center;
+
+      @include desktop{
+         font-size: 36px;
+         line-height: 1.17;
+      }
    }
 }
