@@ -1273,16 +1273,6 @@ body.no-scroll {
     min-width: 528px;
   }
 }
-@media (orientation: landscape) {
-  .backdrop__modal {
-    top: 0;
-    left: 50%;
-    height: 100%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    overflow: auto;
-  }
-}
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -1497,8 +1487,7 @@ body.no-scroll {
 .modal-form__checkbox-link {
   font-size: 12px;
   line-height: 1.17;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: var(--accent-text-color);
 }
 @media screen and (min-width: 1200px) {

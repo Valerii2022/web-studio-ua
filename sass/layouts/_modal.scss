@@ -42,14 +42,6 @@
          min-height: 581px;
          min-width: 528px;
       }
-
-      @media (orientation: landscape) {
-         top: 0;
-         left: 50%;
-         height: 100%;
-         transform: translate(-50%, 0);
-         overflow: auto;
-      }
    }
 
    &.is-hidden {
