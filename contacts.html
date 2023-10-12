@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/web.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="page-header">
+      <div class="container page-header__wrapper">
+        <a href="./index.html" class="page-header__logo logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <div class="page-header__nav-wrap" data-menu>
+          <nav class="page-header__nav">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link link"> Студія </a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link link"> Портфоліо </a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./contacts.html" class="site-nav__link link current"> Контакти </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="page-header__contacts-list contacts-list list">
+            <li class="contacts-list__item">
+              <a
+                href="tel:+380961111111"
+                class="contacts-list__link contacts-list__accent-link link"
+              >
+                <svg class="contacts-list__icon icon-phone" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="contacts-list__item">
+              <a href="mailto:info@devstudio.com" class="contacts-list__link link">
+                <svg class="contacts-list__icon icon-email" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social-mobile menu-list">
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Instagram</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Twitter</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">Facebook</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+          <button class="page-header__close-menu" data-menu-close>
+            <svg width="24" height="16">
+              <use class="page-header__menu-icon" href="./images/icons.svg#icon-close_mobile"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="page-header__open-menu" data-menu-open>
+          <svg width="24" height="16">
+            <use class="page-header__menu-icon" href="./images/icons.svg#icon-burger_mobile"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!--main-->
+    <main class="content"></main>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container footer__wrap">
+        <div class="footer__address-wrap">
+          <a href="./index.html" class="footer__logo logo"
+            ><span class="logo__accent">Web</span>Studio
+          </a>
+          <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="footer__list list">
+            <li class="footer__item">
+              <a href="mailto:info@devstudio.com" class="footer__link link"> info@devstudio.com </a>
+            </li>
+            <li class="footer__item">
+              <a href="tel:+380961111111" class="footer__link link"> +38 096 111 11 11 </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__join-in">
+          <p class="footer__join-in-title">приєднуйтесь</p>
+          <ul class="social-network list">
+            <li class="social-network__item">
+              <a
+                class="social-network__link social-network__footer-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferree"
+              >
+                <svg class="social-network__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a
+                class="social-network__link social-network__footer-link"
+                href="https://uk-ua.facebook.com/"
+                target="_blank"
+                rel="noopener noreferree"
+              >
+                <svg class="social-network__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a
+                class="social-network__link social-network__footer-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferree"
+              >
+                <svg class="social-network__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a
+                class="social-network__link social-network__footer-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferree"
+              >
+                <svg class="social-network__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__sign-up sign-up">
+          <p class="sign-up__title">Підпишіться на розсилку</p>
+          <form class="sign-up__form" action="#">
+            <label class="sign-up__label">
+              <input
+                class="sign-up__input"
+                pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
+                type="email"
+                name="sign-up-email"
+                placeholder="E-mail"
+                required
+            /></label>
+            <button class="sign-up__btn button" type="submit">
+              <span class="sign-up__text">Підписатися</span>
+              <svg class="sign-up__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/web.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -38,7 +39,7 @@
                 <a href="./portfolio.html" class="site-nav__link link current"> Портфоліо </a>
               </li>
               <li class="site-nav__item">
-                <a href="#" class="site-nav__link link"> Контакти </a>
+                <a href="./contacts.html" class="site-nav__link link"> Контакти </a>
               </li>
             </ul>
           </nav>
@@ -91,7 +92,7 @@
       </div>
     </header>
     <!--main-->
-    <main>
+    <main class="content">
       <!-- portfolio section -->
       <section class="section portfolio">
         <div class="container">
@@ -549,7 +550,13 @@
           <p class="sign-up__title">Підпишіться на розсилку</p>
           <form class="sign-up__form" action="#">
             <label class="sign-up__label">
-              <input class="sign-up__input" type="text" name="sign-up-email" placeholder="E-mail"
+              <input
+                class="sign-up__input"
+                pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
+                type="email"
+                name="sign-up-email"
+                placeholder="E-mail"
+                required
             /></label>
             <button class="sign-up__btn button" type="submit">
               <span class="sign-up__text">Підписатися</span>
