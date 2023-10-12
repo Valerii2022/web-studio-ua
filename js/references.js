@@ -8,4 +8,7 @@ export const refs = {
   openContractBtn: document.querySelector('[data-contract-open]'),
   closeContractBtn: document.querySelector('[data-contract-close]'),
   contractModal: document.querySelector('[data-contract-modal]'),
+  signForm: document.querySelectorAll('[data-sign-form]'),
+  successModal: document.querySelector('[data-success]'),
+  successCloseBtn: document.querySelector('[data-success-close]'),
 };

@@ -103,7 +103,7 @@
                 <input
                   class="filter-form__input hidden"
                   type="radio"
-                  name="portfolio-filter"
+                  name="portfolioFilter"
                   id="all"
                   checked
                 />
@@ -113,7 +113,7 @@
                 <input
                   class="filter-form__input hidden"
                   type="radio"
-                  name="portfolio-filter"
+                  name="portfolioFilter"
                   id="web"
                 />
                 <label class="filter-form__label" for="web">Веб-сайти</label>
@@ -122,7 +122,7 @@
                 <input
                   class="filter-form__input hidden"
                   type="radio"
-                  name="portfolio-filter"
+                  name="portfolioFilter"
                   id="app"
                 />
                 <label class="filter-form__label" for="app">Додатки</label>
@@ -131,7 +131,7 @@
                 <input
                   class="filter-form__input hidden"
                   type="radio"
-                  name="portfolio-filter"
+                  name="portfolioFilter"
                   id="design"
                 />
                 <label class="filter-form__label" for="design">Дизайн</label>
@@ -140,7 +140,7 @@
                 <input
                   class="filter-form__input hidden"
                   type="radio"
-                  name="portfolio-filter"
+                  name="portfolioFilter"
                   id="marketing"
                 />
                 <label class="filter-form__label" for="marketing">Маркетинг</label>
@@ -548,13 +548,13 @@
         </div>
         <div class="footer__sign-up sign-up">
           <p class="sign-up__title">Підпишіться на розсилку</p>
-          <form class="sign-up__form" action="#">
+          <form class="sign-up__form" action="#" data-sign-form>
             <label class="sign-up__label">
               <input
                 class="sign-up__input"
                 pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
                 type="email"
-                name="sign-up-email"
+                name="signUpEmail"
                 placeholder="E-mail"
                 required
             /></label>
@@ -568,6 +568,20 @@
         </div>
       </div>
     </footer>
+    <!-- success modal -->
+    <div class="backdrop is-hidden" data-success>
+      <div class="backdrop__modal">
+        <button class="backdrop__btn" data-success-close>
+          <svg class="backdrop__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="backdrop__title">Дякуємо, що залишили свої дані.</p>
+        <p class="backdrop__title">Ми обов'язково з Вами зв'яжемось!</p>
+      </div>
+    </div>
+    <!-- modals script -->
+    <script src="./js/successModal.js" type="module"></script>
     <!-- mobile menu script -->
     <script defer src="./js/menu.js"></script>
   </body>

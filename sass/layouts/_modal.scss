@@ -36,12 +36,10 @@
     }
 
     @include mobile {
-      min-height: 609px;
       min-width: 450px;
     }
 
     @include desktop {
-      min-height: 581px;
       min-width: 528px;
     }
   }
@@ -80,8 +78,6 @@
   }
 
   &__title {
-    margin-bottom: 12px;
-
     @include font(700, 20px, 1.5, 0.03em);
     text-align: center;
 

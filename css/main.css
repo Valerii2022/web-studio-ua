@@ -1296,13 +1296,11 @@ body.no-scroll {
 }
 @media screen and (min-width: 480px) {
   .backdrop__modal {
-    min-height: 609px;
     min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
-    min-height: 581px;
     min-width: 528px;
   }
 }
@@ -1341,7 +1339,6 @@ body.no-scroll {
   fill: currentColor;
 }
 .backdrop__title {
-  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -1376,6 +1373,7 @@ body.no-scroll {
 .modal-form__label {
   display: block;
   margin-bottom: 4px;
+  margin-top: 12px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01;

@@ -626,13 +626,13 @@
         </div>
         <div class="footer__sign-up sign-up">
           <p class="sign-up__title">Підпишіться на розсилку</p>
-          <form class="sign-up__form" action="#">
+          <form class="sign-up__form" action="#" data-sign-form>
             <label class="sign-up__label">
               <input
                 class="sign-up__input"
                 pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
                 type="email"
-                name="sign-up-email"
+                name="signUpEmail"
                 placeholder="E-mail"
                 required
             /></label>
@@ -662,7 +662,7 @@
               class="modal-form__input"
               pattern="[a-zA-Zа-яА-Я]+ ?[a-zA-Zа-яА-Я]+"
               type="text"
-              name="user-name"
+              name="userName"
               id="user-name"
               required
               min="3"
@@ -678,7 +678,7 @@
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
               title="Телефон має бути у форматі 000-000-0000"
               type="tel"
-              name="user-tel"
+              name="userTel"
               id="user-tel"
               required
             />
@@ -692,7 +692,7 @@
               class="modal-form__input"
               type="email"
               pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/"
-              name="user-email"
+              name="userEmail"
               id="user-email"
               required
             />
@@ -703,12 +703,12 @@
           <label class="modal-form__label" for="feedback">Коментар</label>
           <textarea
             class="modal-form__textarea"
-            name="user-feedback"
+            name="userFeedback"
             id="feedback"
             placeholder="Введіть текст"
           ></textarea>
           <label class="modal-form__checkbox-label">
-            <input type="checkbox" class="modal-form__checkbox hidden" name="form-checkbox" />
+            <input type="checkbox" class="modal-form__checkbox hidden" name="formCheckbox" />
             <span class="modal-form__checkbox-icon">
               <svg class="modal-form__icon-check" width="32" height="32">
                 <use href="./images/icons.svg#icon-check"></use>
@@ -781,9 +781,22 @@
         </div>
       </div>
     </div>
+    <!-- success modal -->
+    <div class="backdrop is-hidden" data-success>
+      <div class="backdrop__modal">
+        <button class="backdrop__btn" data-success-close>
+          <svg class="backdrop__icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="backdrop__title">Дякуємо, що залишили свої дані.</p>
+        <p class="backdrop__title">Ми обов'язково з Вами зв'яжемось!</p>
+      </div>
+    </div>
     <!-- modals script -->
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/contractModal.js" type="module"></script>
+    <script src="./js/successModal.js" type="module"></script>
     <!-- mobile menu script -->
     <script src="./js/menu.js" type="module"></script>
   </body>
