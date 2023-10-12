@@ -1,155 +1,161 @@
 .modal-form {
-   &__label {
-      display: block;
-      margin-bottom: 4px;
+  &__label {
+    display: block;
+    margin-bottom: 4px;
 
-      @include font(null, 12px, 1.17, 0.01);
+    @include font(null, 12px, 1.17, 0.01);
 
-      color: var(--primary-text-color);
-   }
+    color: var(--primary-text-color);
+  }
 
-   &__input-wrap {
-      position: relative;
-      margin-bottom: 10px;
-   }
+  &__input-wrap {
+    position: relative;
+    margin-bottom: 10px;
+  }
 
-   &__input {
-      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__input {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      width: 100%;
-      padding: 11px 11px 11px 42px;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      outline: transparent;
+    width: 100%;
+    padding: 11px 11px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: transparent;
 
-      color: var(--secondary-text-color);
-      background-color: transparent;
-   }
+    color: var(--secondary-text-color);
+    background-color: transparent;
+  }
 
-   &__icon {
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      position: absolute;
-      left: 12px;
-      bottom: 12px;
+  &__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
 
-      fill: var(--secondary-text-color);
-   }
+    fill: var(--secondary-text-color);
+  }
 
-   &__input:hover,
-   &__input:focus {
-      border: 1px solid var(--accent-text-color);
-   }
+  &__input:hover,
+  &__input:focus {
+    border: 1px solid var(--accent-text-color);
+  }
 
-   &__input:hover + &__icon,
-   &__input:focus + &__icon {
-      fill: var(--accent-text-color);
-   }
+  &__input:hover + &__icon,
+  &__input:focus + &__icon {
+    fill: var(--accent-text-color);
+  }
 
-   &__textarea {
-      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__textarea {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      margin-bottom: 20px;
-      padding: 12px 16px;
-      width: 100%;
-      height: 120px;
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      border-radius: 4px;
-      resize: none;
-      outline: transparent;
+    margin-bottom: 20px;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: transparent;
 
-      color: var(--secondary-text-color);
-      background-color: transparent;
-   }
+    color: var(--secondary-text-color);
+    background-color: transparent;
+  }
 
-   &__textarea:hover,
-   &__textarea:focus {
-      border: 1px solid var(--accent-text-color);
-   }
+  &__textarea:hover,
+  &__textarea:focus {
+    border: 1px solid var(--accent-text-color);
+  }
 
-   &__textarea::placeholder {
-      @include font(null, 12px, 1.17, 0.01em);
+  &__textarea::placeholder {
+    @include font(null, 12px, 1.17, 0.01em);
 
-      color: rgba(117, 117, 117, 0.5);
-   }
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-   &__btn {
-      @extend %margin-auto;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border: none;
-      border-radius: 4px;
-      width: 200px;
-      height: 50px;
-      cursor: pointer;
-      @include flex(flex, center, center);
+  &__btn {
+    @extend %margin-auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    @include flex(flex, center, center);
 
-      @include font(700, 16px, 1.875, 0.06em);
-      text-align: center;
+    @include font(700, 16px, 1.875, 0.06em);
+    text-align: center;
 
-      color: var(--white-color);
-      background-color: var(--accent-text-color);
-   }
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+  }
 
-   &__checkbox-label {
-      @include flex(flex, null, center);
-      flex-wrap: wrap;
-      gap: 7px;
-      margin-bottom: 30px;
+  &__btn:disabled {
+    background-color: rgba(117, 117, 117, 0.5);
+    cursor: auto;
+  }
 
-      color: var(--white-color);
-   }
+  &__checkbox-label {
+    cursor: pointer;
+    @include flex(flex, null, center);
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 30px;
 
-   &__checkbox-icon {
-      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--white-color);
+  }
 
-      @include flex(flex, center, center);
-      width: 16px;
-      height: 15px;
+  &__checkbox-icon {
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      border: 2px solid var(--secondary-text-color);
-      border-radius: 2px;
+    @include flex(flex, center, center);
+    width: 16px;
+    height: 15px;
 
-      background-color: transparent;
-      background-origin: border-box;
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 2px;
 
-      color: transparent;
-   }
+    background-color: transparent;
+    background-origin: border-box;
 
-   &__icon-check {
-      fill: currentColor;
-   }
+    color: transparent;
+  }
 
-   &__checkbox-text {
-      font-size: 12px;
-      line-height: 1.17;
+  &__icon-check {
+    fill: currentColor;
+  }
 
-      color: var(--primary-text-color);
+  &__checkbox-text {
+    font-size: 12px;
+    line-height: 1.17;
 
-      @include desktop {
-         @include font(null, 14px, 1.71, 0.03em);
-      }
-   }
+    color: var(--primary-text-color);
 
-   &__checkbox-link {
-      font-size: 12px;
-      line-height: 1.17;
+    @include desktop {
+      @include font(null, 14px, 1.71, 0.03em);
+    }
+  }
 
-      text-decoration-line: underline;
+  &__checkbox-link {
+    font-size: 12px;
+    line-height: 1.17;
 
-      color: var(--accent-text-color);
+    text-decoration-line: underline;
 
-      @include desktop {
-         @include font(null, 14px, 1.71, 0.03em);
-      }
-   }
+    color: var(--accent-text-color);
 
-   &__checkbox:focus + &__checkbox-icon {
-      border: 2px solid var(--accent-text-color);
-   }
+    @include desktop {
+      @include font(null, 14px, 1.71, 0.03em);
+    }
+  }
 
-   &__checkbox:checked + &__checkbox-icon {
-      border-color: transparent;
-      background-color: var(--accent-text-color);
-      color: var(--white-color);
-   }
+  &__checkbox:focus + &__checkbox-icon {
+    border: 2px solid var(--accent-text-color);
+  }
+
+  &__checkbox:checked + &__checkbox-icon {
+    border-color: transparent;
+    background-color: var(--accent-text-color);
+    color: var(--white-color);
+  }
 }

@@ -1321,10 +1321,30 @@ body.no-scroll {
     line-height: 1.15;
   }
 }
+.backdrop__text {
+  line-height: 1.71;
+  padding-right: 20px;
+}
 
 .backdrop.is-hidden .backdrop__modal {
   -webkit-transform: translate(-50%, -50%) scale(0.5);
           transform: translate(-50%, -50%) scale(0.5);
+}
+
+.contract-modal-wrapper {
+  padding: 40px 10px 40px 40px;
+}
+
+.contract-modal-inner {
+  height: 560px;
+  overflow: auto;
+  scrollbar-color: red green;
+}
+
+.contract-modal-inner::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--accent-text-color);
+  border-radius: 4px;
 }
 
 .modal-form__label {
@@ -1436,7 +1456,12 @@ body.no-scroll {
   color: var(--white-color);
   background-color: var(--accent-text-color);
 }
+.modal-form__btn:disabled {
+  background-color: rgba(117, 117, 117, 0.5);
+  cursor: auto;
+}
 .modal-form__checkbox-label {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
