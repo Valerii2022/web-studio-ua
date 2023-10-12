@@ -32,8 +32,21 @@ function handleSubmitForm(e) {
   refs.modal.classList.toggle('is-hidden');
   document.body.classList.remove('no-scroll');
   refs.form.reset();
+  handleSuccessModalOpen();
+  refs.submitBtn.disabled = true;
 }
 
 function handleCheckboxInputClick() {
   refs.checkboxInput.checked ? (refs.submitBtn.disabled = false) : (refs.submitBtn.disabled = true);
+}
+
+function handleSuccessModalOpen() {
+  setTimeout(() => {
+    refs.successModal.classList.remove('is-hidden');
+    window.addEventListener('keydown', handleKeyDownClick);
+  }, 500);
+  setTimeout(() => {
+    refs.successModal.classList.add('is-hidden');
+    window.removeEventListener('keydown', handleKeyDownClick);
+  }, 3000);
 }

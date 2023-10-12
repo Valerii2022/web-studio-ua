@@ -12,8 +12,10 @@ function handleSignFormSubmit(e) {
 }
 
 function handleSuccessModalOpen() {
-  refs.successModal.classList.remove('is-hidden');
-  window.addEventListener('keydown', handleKeyDownClick);
+  setTimeout(() => {
+    refs.successModal.classList.remove('is-hidden');
+    window.addEventListener('keydown', handleKeyDownClick);
+  }, 500);
   setTimeout(() => {
     refs.successModal.classList.add('is-hidden');
     window.removeEventListener('keydown', handleKeyDownClick);
