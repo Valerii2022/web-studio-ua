@@ -64,6 +64,25 @@ body.no-scroll {
           flex-grow: 1;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-text-color);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-text-color);
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -1346,19 +1365,12 @@ body.no-scroll {
 }
 
 .contract-modal-wrapper {
-  padding: 40px 10px 40px 40px;
+  padding: 50px 10px 40px 40px;
 }
 
 .contract-modal-inner {
   height: 560px;
   overflow: auto;
-  scrollbar-color: red green;
-}
-
-.contract-modal-inner::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--accent-text-color);
-  border-radius: 4px;
 }
 
 .modal-form__label {

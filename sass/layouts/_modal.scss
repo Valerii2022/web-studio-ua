@@ -105,17 +105,10 @@
 }
 
 .contract-modal-wrapper {
-  padding: 40px 10px 40px 40px;
+  padding: 50px 10px 40px 40px;
 }
 
 .contract-modal-inner {
   height: 560px;
   overflow: auto;
-  scrollbar-color: red green;
-}
-
-.contract-modal-inner::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--accent-text-color);
-  border-radius: 4px;
 }
