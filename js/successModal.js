@@ -6,7 +6,7 @@ refs.successModal.addEventListener('click', handleBackdropClick);
 
 function handleSignFormSubmit(e) {
   e.preventDefault();
-  console.dir({ email: e.target.elements.signUpEmail.value });
+  console.table({ email: e.target.elements.signUpEmail.value });
   refs.signForm.forEach(el => el.reset());
   handleSuccessModalOpen();
 }
